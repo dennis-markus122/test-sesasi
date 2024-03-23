@@ -1,0 +1,1264 @@
+{
+	"info": {
+		"_postman_id": "aac192bc-84b2-4ca6-b1b1-a4863ed9a06d",
+		"name": "test-sesasi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5406206"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "profile",
+					"item": [
+						{
+							"name": "change-password",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer 0276efe170c1d0974fb65afea155da1f",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"old_password\":\"12345678\",\r\n    \"new_password\":\"123456781\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost/test-sesasi/public/profile/change-password",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"test-sesasi",
+										"public",
+										"profile",
+										"change-password"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "change-password",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer 0276efe170c1d0974fb65afea155da1f",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"old_password\":\"12345678\",\r\n    \"new_password\":\"123456781\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost/test-sesasi/public/profile/change-password",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"path": [
+												"test-sesasi",
+												"public",
+												"profile",
+												"change-password"
+											]
+										}
+									},
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"name": "Content-Type",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": true,\n    \"message\": \"Password berhasil di ganti\",\n    \"data\": []\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "time off",
+					"item": [
+						{
+							"name": "request time off",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer 0276efe170c1d0974fb65afea155da1f",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"description\" :\"trww\",\r\n    \"start_date\": \"2022-02-15\",\r\n    \"end_date\": \"2022-2-15\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost/test-sesasi/public/time-off/request",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"test-sesasi",
+										"public",
+										"time-off",
+										"request"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "request cuti",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer 0276efe170c1d0974fb65afea155da1f",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"description\" :\"trww\",\r\n    \"start_date\": \"2022-02-15\",\r\n    \"end_date\": \"2022-2-18\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost/test-sesasi/public/time-off/request",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"path": [
+												"test-sesasi",
+												"public",
+												"time-off",
+												"request"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": "{\r\n    \"status\": true,\r\n    \"message\": \"Berhasil menyimpan cuti\",\r\n    \"data\": []\r\n}"
+								}
+							]
+						},
+						{
+							"name": "displays all my time off lists",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer 0276efe170c1d0974fb65afea155da1f",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost/test-sesasi/public/time-off/show-me",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"test-sesasi",
+										"public",
+										"time-off",
+										"show-me"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "displays all my time off lists",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer 0276efe170c1d0974fb65afea155da1f",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "http://localhost/test-sesasi/public/time-off/show-me",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"path": [
+												"test-sesasi",
+												"public",
+												"time-off",
+												"show-me"
+											]
+										}
+									},
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"name": "Content-Type",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": true,\n    \"message\": \"success\",\n    \"data\": [\n        {\n            \"id\": \"4\",\n            \"id_user\": \"5\",\n            \"description\": \"trww\",\n            \"start\": \"2022-02-15\",\n            \"end\": \"2022-02-15\",\n            \"id_verifikator\": null,\n            \"reason\": null,\n            \"status\": null\n        },\n        {\n            \"id\": \"5\",\n            \"id_user\": \"5\",\n            \"description\": \"trww\",\n            \"start\": \"2022-02-15\",\n            \"end\": \"2022-02-15\",\n            \"id_verifikator\": null,\n            \"reason\": null,\n            \"status\": null\n        },\n        {\n            \"id\": \"6\",\n            \"id_user\": \"5\",\n            \"description\": \"trww\",\n            \"start\": \"2022-02-15\",\n            \"end\": \"2022-02-15\",\n            \"id_verifikator\": null,\n            \"reason\": null,\n            \"status\": null\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "update data timeoff",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer 0276efe170c1d0974fb65afea155da1f",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\":5,\r\n    \"description\" :\"asdasd\",\r\n    \"start_date\": \"2022-02-15\",\r\n    \"end_date\": \"2022-2-15\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost/test-sesasi/public/time-off/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"test-sesasi",
+										"public",
+										"time-off",
+										"update"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "update data timeoff",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer 0276efe170c1d0974fb65afea155da1f",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"id\":4,\r\n    \"description\" :\"asdasd\",\r\n    \"start_date\": \"2022-02-15\",\r\n    \"end_date\": \"2022-2-15\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost/test-sesasi/public/time-off/update",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"path": [
+												"test-sesasi",
+												"public",
+												"time-off",
+												"update"
+											]
+										}
+									},
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"name": "Content-Type",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": true,\n    \"message\": \"Berhasil memperbaharui cuti\",\n    \"data\": []\n}"
+								}
+							]
+						},
+						{
+							"name": "delete time off",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer 0276efe170c1d0974fb65afea155da1f",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\":4\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost/test-sesasi/public/time-off/delete",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"test-sesasi",
+										"public",
+										"time-off",
+										"delete"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "delete time off",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer 0276efe170c1d0974fb65afea155da1f",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"id\":4\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost/test-sesasi/public/time-off/delete",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"path": [
+												"test-sesasi",
+												"public",
+												"time-off",
+												"delete"
+											]
+										}
+									},
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"name": "Content-Type",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": true,\n    \"message\": \"Berhasil menghapus \",\n    \"data\": []\n}"
+								}
+							]
+						},
+						{
+							"name": "cancel time off",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer 0276efe170c1d0974fb65afea155da1f",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\":6\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost/test-sesasi/public/time-off/cancel",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"test-sesasi",
+										"public",
+										"time-off",
+										"cancel"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": "Bearer 0276efe170c1d0974fb65afea155da1f",
+											"disabled": true
+										},
+										{
+											"key": "Aut",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "http://localhost/test-sesasi/public/time-off/cancel",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer 0276efe170c1d0974fb65afea155da1f",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"id\":6\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost/test-sesasi/public/time-off/cancel",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"path": [
+												"test-sesasi",
+												"public",
+												"time-off",
+												"cancel"
+											],
+											"query": [
+												{
+													"key": "",
+													"value": "Bearer 0276efe170c1d0974fb65afea155da1f",
+													"disabled": true
+												},
+												{
+													"key": "Aut",
+													"value": null,
+													"disabled": true
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"name": "Content-Type",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": true,\n    \"message\": \"Berhasil dibatalkan cuti\",\n    \"data\": []\n}"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "verifikator",
+			"item": [
+				{
+					"name": "http://localhost/test-sesasi/public/verifiator/time-off",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 0276efe170c1d0974fb65afea155da1f",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/test-sesasi/public/verifiator/time-off",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"test-sesasi",
+								"public",
+								"verifiator",
+								"time-off"
+							],
+							"query": [
+								{
+									"key": "Au",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost/test-sesasi/public/verifiator/time-off",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer 0276efe170c1d0974fb65afea155da1f",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost/test-sesasi/public/verifiator/time-off",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"test-sesasi",
+										"public",
+										"verifiator",
+										"time-off"
+									],
+									"query": [
+										{
+											"key": "Au",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"sukses\",\n    \"data\": [\n        {\n            \"id\": \"5\",\n            \"description\": \"asdasd\",\n            \"start\": \"2022-02-15\",\n            \"end\": \"2022-02-15\",\n            \"status\": \"DITOLAK\"\n        },\n        {\n            \"id\": \"6\",\n            \"description\": \"trww\",\n            \"start\": \"2022-02-15\",\n            \"end\": \"2022-02-15\",\n            \"status\": \"DIKIRIM\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "http://localhost/test-sesasi/public/verifiator/update-time-off",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 0276efe170c1d0974fb65afea155da1f",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":6,\r\n    \"reason\":\"Silahkssan\",\r\n    \"status\":true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/test-sesasi/public/verifiator/update-time-off",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"test-sesasi",
+								"public",
+								"verifiator",
+								"update-time-off"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost/test-sesasi/public/verifiator/update-time-off",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer 0276efe170c1d0974fb65afea155da1f",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\":6,\r\n    \"reason\":\"Silahkssan\",\r\n    \"status\":true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost/test-sesasi/public/verifiator/update-time-off",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"test-sesasi",
+										"public",
+										"verifiator",
+										"update-time-off"
+									]
+								}
+							},
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"sukses\",\n    \"data\": []\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "admin",
+			"item": [
+				{
+					"name": "http://localhost/test-sesasi/public/admin/user",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 0276efe170c1d0974fb65afea155da1f",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/test-sesasi/public/admin/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"test-sesasi",
+								"public",
+								"admin",
+								"user"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost/test-sesasi/public/admin/user",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer 0276efe170c1d0974fb65afea155da1f",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost/test-sesasi/public/admin/user",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"test-sesasi",
+										"public",
+										"admin",
+										"user"
+									]
+								}
+							},
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"success\",\n    \"data\": [\n        {\n            \"id\": \"1\",\n            \"name\": \"Dennis\",\n            \"username\": \"admin\",\n            \"password\": \"25d55ad283aa400af464c76d713c07ad\",\n            \"role\": \"ADMIN\"\n        },\n        {\n            \"id\": \"2\",\n            \"name\": \"Mas Veri\",\n            \"username\": \"veri\",\n            \"password\": \"25d55ad283aa400af464c76d713c07ad\",\n            \"role\": \"VERIFIKATOR\"\n        },\n        {\n            \"id\": \"3\",\n            \"name\": \"Mas User\",\n            \"username\": \"user\",\n            \"password\": \"25d55ad283aa400af464c76d713c07ad\",\n            \"role\": \"USER\"\n        },\n        {\n            \"id\": \"4\",\n            \"name\": \"asdasdasd\",\n            \"username\": \"user1\",\n            \"password\": \"25d55ad283aa400af464c76d713c07ad\",\n            \"role\": \"USER\"\n        },\n        {\n            \"id\": \"5\",\n            \"name\": \"asdasdasd\",\n            \"username\": \"user2\",\n            \"password\": \"feb8dc0697a2e0a947c6e20dc4ec3ebc\",\n            \"role\": \"USER\"\n        },\n        {\n            \"id\": \"6\",\n            \"name\": \"asdasdasd\",\n            \"username\": \"user3\",\n            \"password\": \"25d55ad283aa400af464c76d713c07ad\",\n            \"role\": \"USER\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "http://localhost/test-sesasi/public/admin/add-verifikator",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 0276efe170c1d0974fb65afea155da1f",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"user2sss\",\r\n    \"password\":\"12345678\",\r\n    \"name\":\"asdasdasd\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/test-sesasi/public/admin/add-verifikator",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"test-sesasi",
+								"public",
+								"admin",
+								"add-verifikator"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost/test-sesasi/public/admin/add-verifikator",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer 0276efe170c1d0974fb65afea155da1f",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\":\"user2sss\",\r\n    \"password\":\"12345678\",\r\n    \"name\":\"asdasdasd\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost/test-sesasi/public/admin/add-verifikator",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"test-sesasi",
+										"public",
+										"admin",
+										"add-verifikator"
+									]
+								}
+							},
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"Berhasil\",\n    \"data\": {\n        \"name\": \"asdasdasd\",\n        \"username\": \"user2sss\",\n        \"password\": \"25d55ad283aa400af464c76d713c07ad\",\n        \"role\": \"VERIFIKATOR\",\n        \"id\": 7\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "http://localhost/test-sesasi/public/admin/change-role",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 0276efe170c1d0974fb65afea155da1f",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"user3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/test-sesasi/public/admin/change-role",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"test-sesasi",
+								"public",
+								"admin",
+								"change-role"
+							],
+							"query": [
+								{
+									"key": "Aut",
+									"value": "Bearer 0276efe170c1d0974fb65afea155da1f",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost/test-sesasi/public/admin/change-role",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer 0276efe170c1d0974fb65afea155da1f",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\":\"user3\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost/test-sesasi/public/admin/change-role",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"test-sesasi",
+										"public",
+										"admin",
+										"change-role"
+									],
+									"query": [
+										{
+											"key": "Aut",
+											"value": "Bearer 0276efe170c1d0974fb65afea155da1f",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"Berhasil mengganti role user\",\n    \"data\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "http://localhost/test-sesasi/public/admin/change-password-user",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 0276efe170c1d0974fb65afea155da1f",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"user3\",\r\n    \"password\":\"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/test-sesasi/public/admin/change-password-user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"test-sesasi",
+								"public",
+								"admin",
+								"change-password-user"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost/test-sesasi/public/admin/change-password-user",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer 0276efe170c1d0974fb65afea155da1f",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\":\"user3\",\r\n    \"password\":\"12345678\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost/test-sesasi/public/admin/change-password-user",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"path": [
+										"test-sesasi",
+										"public",
+										"admin",
+										"change-password-user"
+									]
+								}
+							},
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"Berhasil mengganti password user\",\n    \"data\": []\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"user\",\r\n    \"password\":\"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/test-sesasi/public/sign-in",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"test-sesasi",
+						"public",
+						"sign-in"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"user\",\r\n    \"password\":\"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/test-sesasi/public/sign-in",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"test-sesasi",
+								"public",
+								"sign-in"
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": true,\n    \"message\": \"Berhasil\",\n    \"data\": {\n        \"id\": \"3\",\n        \"name\": \"Mas User\",\n        \"username\": \"user\",\n        \"password\": \"25d55ad283aa400af464c76d713c07ad \",\n        \"role\": \"\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"user2\",\r\n    \"password\":\"12345678\",\r\n    \"name\":\"asdasdasd\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/test-sesasi/public/sign-up",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"test-sesasi",
+						"public",
+						"sign-up"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "register",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"user1\",\r\n    \"password\":\"12345678\",\r\n    \"name\":\"asdasdasd\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/test-sesasi/public/sign-up",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"test-sesasi",
+								"public",
+								"sign-up"
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": true,\n    \"message\": \"Berhasil\",\n    \"data\": {\n        \"name\": \"asdasdasd\",\n        \"username\": \"user1\",\n        \"password\": \"25d55ad283aa400af464c76d713c07ad\",\n        \"role\": \"USER\",\n        \"id\": 4\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "logout",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 0276efe170c1d0974fb65afea155da1f",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost/test-sesasi/public/sign-out",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"test-sesasi",
+						"public",
+						"sign-out"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "logout",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 0276efe170c1d0974fb65afea155da1f",
+								"type": "text"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/test-sesasi/public/sign-out",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"test-sesasi",
+								"public",
+								"sign-out"
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": true,\n    \"message\": \"Berhasil keluar\",\n    \"data\": []\n}"
+				}
+			]
+		}
+	]
+}
